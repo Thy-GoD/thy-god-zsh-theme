@@ -33,7 +33,7 @@ Prompt with Git-Status implementation.
 ## Current todo list:
 
 - Allow the Skull symbol to change if user is root or not. ☑️
-- Add support for more plugins
+- Add support for more plugins ☑️ (Couldn't find any other useful plugins.)
 - See if colors need optimizing **(High Priority, as my sense of colors is shit.)**
 - See if re-formatting plugins is neccessary.
 - Add list of cool/nice symbols for easier customization.
