@@ -8,6 +8,11 @@ local PR_USER PR_USER_OP PR_PROMPT PR_HOST PR_SYMBOL
 local USER_SYMBOL ROOT_SYMBOL
 
 # Change these if you want to use other symbols.
+# Other Symbols: 
+# ★ ∴ → ☣ ☢ ▲ ▼ 
+# ❤ ❥ ♥ ♡ ✘ ツ⌘
+# € £ ϟ ✿ ❅ © ♚
+# ->
 
 USER_SYMBOL='>>>'
 ROOT_SYMBOL='💀'
@@ -27,7 +32,7 @@ fi
 # Returns green arrow when there is no error.
 # Returns red cross when there is an error.
 
-PR_PROMPT="%(?.%B%F{green}➜ %f.%B%F{red}⨯ %f)"
+PR_PROMPT="%(?.%B%F{green}→ %f.%B%F{red}⨯ %f)"
 
 # Check if we are on SSH or not
 if [[ -n "$SSH_CLIENT"  ||  -n "$SSH2_CLIENT" ]]; then
