@@ -34,7 +34,8 @@ Prompt with Git-Status implementation.
 
 - Allow the Skull symbol to change if user is root or not. ☑️
 - Add support for more plugins ☑️ (Couldn't find any other useful plugins.)
-- See if colors need optimizing **(High Priority, as my sense of colors is shit.)**
-- See if re-formatting plugins is neccessary.
-- Add list of cool/nice symbols for easier customization.
+- See if colors need optimizing **(Somewhat resolved.)** ☑
+- See if re-formatting plugins is neccessary. ☑ (Not really that important, just a couple tweaks)
+- Add list of cool/nice symbols for easier customization. ☑
+- Update the screenshots to match new prompt look.
 - TBD
