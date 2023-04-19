@@ -39,7 +39,7 @@ fi
 # Sets Prompt Variables.
 local return_code="%(?..%F{red}%? %f)"
 local user_host="${PR_USER}%F{cyan}${PR_SYMBOL}${PR_HOST}"
-local current_dir="%B%F{blue}%~%f%b"
+local current_dir="%B%F{204}%~%f%b"
 local git_branch='$(git_super_status)'
 
 # Sets Prompt Layout
@@ -49,15 +49,15 @@ $PR_PROMPT"
 RPROMPT="${return_code}"
 
 # Sets Configurations for Plugins.
-ZSH_THEME_GIT_PROMPT_PREFIX="("
-ZSH_THEME_GIT_PROMPT_SUFFIX=")"
+ZSH_THEME_GIT_PROMPT_PREFIX="%F{123}~["
+ZSH_THEME_GIT_PROMPT_SUFFIX="%B%F{135}]%f"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg_bold[green]%}%{✔%G%}"
-ZSH_THEME_GIT_PROMPT_SEPARATOR="|"
-ZSH_THEME_GIT_PROMPT_BRANCH="%{$fg_bold[red]%}"
+ZSH_THEME_GIT_PROMPT_SEPARATOR="%F{123}]%f%F{250}:%f%B%F{135}["
+ZSH_THEME_GIT_PROMPT_BRANCH="%F{123}"
 ZSH_THEME_GIT_PROMPT_STAGED="%{$fg[red]%}%{●%G%}"
 ZSH_THEME_GIT_PROMPT_CONFLICTS="%{$fg[red]%}%{✖%G%}"
-ZSH_THEME_GIT_PROMPT_CHANGED="%{$fg[blue]%}%{✚%G%}"
-ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[blue]%}%{-%G%}"
+ZSH_THEME_GIT_PROMPT_CHANGED="%{$fg_bold[blue]%}%{✚%G%}"
+ZSH_THEME_GIT_PROMPT_DELETED="%{$fg_bold[blue]%}%{-%G%}"
 ZSH_THEME_GIT_PROMPT_BEHIND="%{↓%G%}"
 ZSH_THEME_GIT_PROMPT_AHEAD="%{↑%G%}"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[cyan]%}%{…%G%}"
