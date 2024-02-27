@@ -44,9 +44,8 @@ local current_dir="%B%F{204}%~%f%b"
 local git_branch='$(git_super_status)'
 
 # Sets Prompt Layout
-PROMPT="
-${user_host} ${current_dir} ${git_branch}
-$PR_PROMPT"
+NEWLINE=$'\n'
+PROMPT="${NEWLINE}${user_host} ${current_dir} ${git_branch} ${NEWLINE}$PR_PROMPT"
 RPROMPT="${return_code}"
 
 # Sets Configurations for Plugins.
