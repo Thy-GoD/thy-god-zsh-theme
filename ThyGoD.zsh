@@ -7,8 +7,12 @@ setopt prompt_subst
   local PR_USER PR_USER_OP PR_PROMPT PR_HOST PR_SYMBOL
   local USER_SYMBOL ROOT_SYMBOL
   
-  # Custom symbols have been removed as they may conflict with the initiation process, 
-  # do copy paste your own from online.
+  # Change these if you want to use other symbols.
+  # Other Symbols: 
+  # ★ ∴ → ☣ ☢ ▲ ▼ 
+  # ❤ ❥ ♥ ♡ ✘ ツ⌘
+  # € £ ϟ ✿ ❅ © ♚
+  # ->
   
   USER_SYMBOL='>>>'
   ROOT_SYMBOL='💀'
